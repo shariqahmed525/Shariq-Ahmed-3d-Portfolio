@@ -252,7 +252,7 @@ const experiences: ExperienceInterface[] = [
     company_name: "Bio Insights",
     icon: bioCompany,
     iconColor: "#ffffff",
-    date: "May 2024 - July 2024",
+    date: "May 2024 - November 2024",
     points: [
       "Developed APIs and middleware with Adonis.js and PostgreSQL, improving speed by 30% and reducing errors by 15% through automation.",
       "Designed front-end with Next.js and Material UI, managed back-end systems, and ensured smooth deployments using Docker.",
