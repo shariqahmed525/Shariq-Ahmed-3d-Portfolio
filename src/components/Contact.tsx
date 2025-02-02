@@ -37,6 +37,7 @@ const cls =
 const Contact = () => {
   const { isDark } = useContext(DarkModeContext);
   const [showRobot, setShowRobot] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     reset,
     register,
@@ -45,8 +46,6 @@ const Contact = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const onSubmit = async ({
     name,
@@ -58,16 +57,22 @@ const Contact = () => {
     message: string;
   }) => {
     setIsSubmitting(true);
+    const {
+      VITE_EMAIL_PUBLIC_KEY,
+      VITE_EMAIL_SERVICE_ID,
+      VITE_EMAIL_TEMPLATE_ID,
+    } = import.meta.env;
+
     emailjs
       .send(
-        "service_t5mas3d",
-        "template_1f14c0a",
+        VITE_EMAIL_SERVICE_ID as string,
+        VITE_EMAIL_TEMPLATE_ID as string,
         {
           message,
           from_name: name,
           from_email: email,
         },
-        "FATmBmTxoNpMmfKVx"
+        VITE_EMAIL_PUBLIC_KEY as string
       )
       .then(() => {
         toast.success(
@@ -79,8 +84,10 @@ const Contact = () => {
         toast.error(
           "There was an error sending your message. Please try again."
         );
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-    setIsSubmitting(false);
   };
 
   useEffect(() => {
