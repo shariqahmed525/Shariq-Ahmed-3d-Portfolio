@@ -3,7 +3,7 @@ import logoLight from "/assets/logos/logo-white.png";
 import sunIcon from "/assets/svgs/sun.svg";
 import moonIcon from "/assets/svgs/moon.svg";
 import me from "/assets/personal/me_transparent.png";
-import resume from "/assets/personal/Shariq-Ahmed-Resume.pdf";
+import resume from "/assets/personal/Shariq-Ahmed-Resume-03-Feb-2025.pdf";
 
 // Service Icon
 import mobile from "/assets/skills/mobile.svg";
@@ -68,9 +68,9 @@ import francisco from "/assets/clients/francisco.jpg";
 
 // Certificates Photos
 import smit from "/assets/certificates/smit.jpg";
+import fuuast from "/assets/certificates/fuuast.png";
 import aptech from "/assets/certificates/aptech.png";
 import udacity from "/assets/certificates/udacity.png";
-import orasoft from "/assets/certificates/orasoft.png";
 import coursera from "/assets/certificates/coursera.png";
 
 export {
@@ -142,9 +142,9 @@ export {
 
   // Certificates icon
   smit,
+  fuuast,
   aptech,
   udacity,
-  orasoft,
   coursera,
 
   // Personal

@@ -44,8 +44,11 @@ const ProjectCard = ({
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+        {tags.map((tag, index) => (
+          <p
+            className={`text-[14px] ${tag.color}`}
+            key={`tags-${Math.random()}-${index}-${tag.name}`}
+          >
             #{tag.name}
           </p>
         ))}
@@ -84,8 +87,8 @@ const Works = () => {
       {/* @ts-expect-error */}
       <motion.div variants={fadeIn("up", "spring", 0.5, 0.75)}>
         <div className="mt-20 grid justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projects.map((project) => (
-            <ProjectCard {...project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={`projects-${index}`} {...project} />
           ))}
         </div>
       </motion.div>

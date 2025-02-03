@@ -6,7 +6,13 @@ import { me, resume } from "../assets/index.js";
 import { SectionWrapper } from "../hoc/index.js";
 import { SiAdobeacrobatreader } from "react-icons/si";
 import { fadeIn, textVariant } from "../utils/motion.js";
-import { EMAIL, EMAIL_LINK, services, SOCIALS } from "../constants/index.js";
+import {
+  CALENDLY_LINK,
+  EMAIL,
+  EMAIL_LINK,
+  services,
+  SOCIALS,
+} from "../constants/index.js";
 
 interface ServiceCardProps {
   index: number;
@@ -61,7 +67,7 @@ const About = () => {
             </div>
           </motion.div>
           {/* @ts-expect-error */}
-          <motion.p variants={fadeIn("", "", 0.1, 1)}>
+          <motion.div variants={fadeIn("", "", 0.1, 1)}>
             <p className="mt-4 text-c-black dark:text-gray-300 text-[15px] sm:text-lg text-center md:text-left leading-[30px]">
               A Full Stack Developer with over 6 years of experience building
               dynamic websites and scalable applications. I specialize in
@@ -80,9 +86,9 @@ const About = () => {
               or reach out any of the options given below. I'm always happy to
               chat and share more about my work!
             </p>
-          </motion.p>
+          </motion.div>
         </div>
-        <motion.p
+        <motion.div
           // @ts-expect-error
           variants={fadeIn("", "", 0.1, 1)}
           className="order-first lg:order-last flex justify-center items-center"
@@ -94,7 +100,7 @@ const About = () => {
               className="w-full h-full object-contain"
             />
           </div>
-        </motion.p>
+        </motion.div>
       </div>
 
       <motion.div
@@ -103,8 +109,8 @@ const About = () => {
         className="mt-10 flex flex-col sm:flex-row flex-wrap justify-center md:justify-start items-center gap-5"
       >
         <div className="flex gap-5 flex-wrap justify-center md:justify-start items-center">
-          {SOCIALS?.map((social) => (
-            <Tilt className="h-full">
+          {SOCIALS?.map((social, index) => (
+            <Tilt key={`socials-${index}`} className="h-full">
               <div className="border border-solid theme-gradient rounded-full">
                 <div
                   className={`${styles.buttonBg} p-[1px] rounded-full flex justify-center items-center cursor-pointer select-none`}
@@ -131,9 +137,9 @@ const About = () => {
                 className={`${styles.buttonBg} p-[1px] rounded-full flex justify-center items-center cursor-pointer select-none`}
               >
                 <a
-                  href={resume}
                   target="_blank"
-                  title="Call Schedule with Shariq Ahmed"
+                  href={CALENDLY_LINK}
+                  title="Call Schedule with Shariq Ahmed on Calendly"
                   className="py-2.5 px-5 rounded-xl outline-none font-medium text-c-black dark:text-gray-300 flex justify-center items-center"
                 >
                   <IoMdCalendar size={22} />{" "}
@@ -165,7 +171,7 @@ const About = () => {
 
       <div className="mt-20 grid items-center justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 xl:gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={`service-${index}`} index={index} {...service} />
         ))}
       </div>
     </div>

@@ -43,8 +43,11 @@ const LinkButton = ({
     >
       {links
         .filter((link) => link.link)
-        .map((link) => (
-          <Tilt className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+        .map((link, index) => (
+          <Tilt
+            key={`link-button-${index}`}
+            className="w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+          >
             <div className="bg-black border border-solid border-gray-600 rounded-full">
               <div
                 className={`bg-black-gradient p-[1px] rounded-full flex justify-center items-center cursor-pointer select-none`}

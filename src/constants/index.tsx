@@ -61,7 +61,7 @@ import {
   jan,
 
   // Certifications
-  orasoft,
+  fuuast,
   coursera,
   aptech,
   udacity,
@@ -95,12 +95,12 @@ export const navLinks = [
     title: "Education",
   },
   {
-    id: "testimonials",
-    title: "Testimonials",
-  },
-  {
     id: "contact",
     title: "Contact",
+  },
+  {
+    isForResume: true,
+    title: "Resume",
   },
 ];
 
@@ -404,7 +404,7 @@ const projects: ProjectInterface[] = [
   {
     name: "Personal Portfolio",
     description:
-      "Welcome to my website! I want to give special thanks to JavaScript Mastery for the ThreeJS template, which I heavily modified to my liking. I also modified the magical particles effect by Eli Shmerler to fit my website, learning about vertex and fragment shaders along the way.",
+      "Welcome to my website! Special thanks to JavaScript Mastery for the Three.js template, which I extensively customized. I also adapted Eli Shmerler's magical particles effect to better suit my website.",
     tags: [
       {
         name: "ThreeJS",
@@ -423,7 +423,7 @@ const projects: ProjectInterface[] = [
         color: "pink-text-gradient",
       },
       {
-        name: "Javascript",
+        name: "Typescript",
         color: "blue-text-gradient",
       },
       {
@@ -843,9 +843,9 @@ export interface ProgramInterface {
 
 const programs: ProgramInterface[] = [
   {
-    company: "Orasoft",
+    company: "FUUAST",
     title: "Bachelors",
-    icon: orasoft,
+    icon: fuuast,
     date: "Feb 2024 - Present",
     description: "Bachelors in Computer Science BSCS",
   },
@@ -857,15 +857,6 @@ const programs: ProgramInterface[] = [
     description:
       "DevOps on AWS specialization teaches me how to use the combination of DevOps philosophies, practices and tools to develop, deploy, and maintain applications in the AWS Cloud. Benefits of adopting DevOps include: rapid delivery, reliability, scalability, security and improved collaboration.",
     link: "https://www.coursera.org/account/accomplishments/specialization/P4H18ETM02V8",
-  },
-  {
-    company: "Aptech",
-    title: "ACCP PRO",
-    icon: aptech,
-    date: "Jun 2018 - Jun 2021",
-    description:
-      "ACCP PRO (Aptech Certified Computer Program Professional) is a complete career-oriented program to prepare students for todays I.T. Industry. The course gives a strong foundation to students on various concepts related to software development and global technology insights.",
-    link: "https://drive.google.com/file/d/1G2au1thtPKqMQWv7smyzAyGaREOsaL2l/view",
   },
   {
     company: "Udacity",
@@ -894,6 +885,15 @@ const programs: ProgramInterface[] = [
       "The Progressive Web App (PWA) Program at Saylani Mass IT Training teaches the skills needed to build fast and reliable web applications. It covers HTML, CSS, JavaScript, ECMAScript, Firebase, and PWA technologies. This training helps learners create web apps that work offline, load quickly, and provide a smooth user experience.",
     link: "https://drive.google.com/file/d/1Nh1GNVfMOe_Fs7mAzAongjOguEJZTmrJ/view",
   },
+  {
+    company: "Aptech",
+    title: "ACCP PRO",
+    icon: aptech,
+    date: "Feb 2016 - Feb 2019",
+    description:
+      "ACCP PRO (Aptech Certified Computer Program Professional) is a complete career-oriented program to prepare students for todays I.T. Industry. The course gives a strong foundation to students on various concepts related to software development and global technology insights.",
+    link: "https://drive.google.com/file/d/1G2au1thtPKqMQWv7smyzAyGaREOsaL2l/view",
+  },
 ];
 
 const EMAIL = "shariq.ahmed525@gmail.com";
@@ -901,6 +901,7 @@ const EMAIL_LINK = "mailto:shariq.ahmed525@gmail.com";
 
 const PHONE = "+92 3032139848";
 const PHONE_LINK = "tel:+923032139848";
+const CALENDLY_LINK = "https://calendly.com/shariq-ahmed525";
 
 const SOCIALS = [
   {
@@ -945,6 +946,7 @@ const SOCIALS = [
 
 export {
   EMAIL,
+  CALENDLY_LINK,
   EMAIL_LINK,
   PHONE,
   PHONE_LINK,
