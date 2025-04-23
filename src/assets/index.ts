@@ -3,7 +3,7 @@ import logoLight from "/assets/logos/logo-white.png";
 import sunIcon from "/assets/svgs/sun.svg";
 import moonIcon from "/assets/svgs/moon.svg";
 import me from "/assets/personal/me_transparent.png";
-import resume from "/assets/personal/Shariq-Ahmed-Resume-03-Feb-2025.pdf";
+import resume from "/assets/personal/ShariqAhmed-Resume.pdf";
 
 // Service Icon
 import mobile from "/assets/skills/mobile.svg";
