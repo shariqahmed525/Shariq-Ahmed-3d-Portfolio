@@ -20,6 +20,7 @@ const Tech = () => {
       <div className="flex flex-row flex-wrap justify-center gap-5 mt-10">
         {technologies.map((technology, index) => (
           <motion.div
+            title={technology.name}
             key={technology.name}
             // @ts-expect-error
             variants={textVariant((index + 9) * 0.05)}

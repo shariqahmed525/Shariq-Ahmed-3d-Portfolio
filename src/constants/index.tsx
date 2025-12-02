@@ -18,11 +18,11 @@ import {
   reactJS,
   typescript,
   nextJS,
-  angular,
-  vueJS,
+  // angular,
+  // vueJS,
   docker,
   firebase,
-  flutter,
+  // flutter,
   nodeJS,
   nestJS,
   postgresSQL,
@@ -31,13 +31,13 @@ import {
   sass,
   redux,
   redis,
-  svelte,
-  nuxtJS,
+  // svelte,
+  // nuxtJS,
   viteJS,
   express,
   javascript,
-  azureDevops,
-  googleCloud,
+  // azureDevops,
+  // googleCloud,
   tailwindCSS,
   adonis,
 
@@ -45,7 +45,6 @@ import {
   bioPortfolio,
   plaiPortfolio,
   lionsPortfolio,
-  dirtoutPortfolio,
   lineagePortfolio,
   iAgilityPortfolio,
   personalPortfolio,
@@ -66,6 +65,8 @@ import {
   aptech,
   udacity,
   smit,
+  prisma,
+  supabase,
 } from "../assets";
 import { MdEmail } from "react-icons/md";
 import { IoMdCall } from "react-icons/io";
@@ -156,26 +157,26 @@ const technologies = [
     name: "Next JS",
     icon: nextJS,
   },
-  {
-    name: "Angular",
-    icon: angular,
-  },
-  {
-    name: "Vue",
-    icon: vueJS,
-  },
-  {
-    name: "Nuxt JS",
-    icon: nuxtJS,
-  },
-  {
-    name: "Svelte",
-    icon: svelte,
-  },
-  {
-    name: "Flutter",
-    icon: flutter,
-  },
+  // {
+  //   name: "Angular",
+  //   icon: angular,
+  // },
+  // {
+  //   name: "Vue",
+  //   icon: vueJS,
+  // },
+  // {
+  //   name: "Nuxt JS",
+  //   icon: nuxtJS,
+  // },
+  // {
+  //   name: "Svelte",
+  //   icon: svelte,
+  // },
+  // {
+  //   name: "Flutter",
+  //   icon: flutter,
+  // },
   {
     name: "Node JS",
     icon: nodeJS,
@@ -209,6 +210,14 @@ const technologies = [
     icon: mongoDB,
   },
   {
+    name: "Supabase",
+    icon: supabase,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
     name: "Docker",
     icon: docker,
   },
@@ -216,14 +225,14 @@ const technologies = [
     name: "AWS",
     icon: aws,
   },
-  {
-    name: "Google Cloud",
-    icon: googleCloud,
-  },
-  {
-    name: "Azure DevOps",
-    icon: azureDevops,
-  },
+  // {
+  //   name: "Google Cloud",
+  //   icon: googleCloud,
+  // },
+  // {
+  //   name: "Azure DevOps",
+  //   icon: azureDevops,
+  // },
 ];
 
 export interface ExperienceInterface {
@@ -397,7 +406,7 @@ const projects: ProjectInterface[] = [
     ],
     image: lionsPortfolio,
     android_link:
-      "https://play.google.com/store/apps/details?id=com.lionsrking",
+      "",
     ios_link: "https://apps.apple.com/us/app/lionsrking/id6448316220",
     live_link: "",
   },
@@ -705,7 +714,7 @@ const projects: ProjectInterface[] = [
       "iAgility is an online consulting platform that helps businesses adapt to the future of work. With the best talent moving to independent work, iAgility connects businesses and consultants to stay ahead, offering a platform that supports growth and innovation.",
     tags: [
       {
-        name: "Angular",
+        name: "Next JS",
         color: "blue-text-gradient",
       },
       {
@@ -726,11 +735,11 @@ const projects: ProjectInterface[] = [
         color: "green-text-gradient",
       },
       {
-        name: "Python",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "DJango",
+        name: "Nest.js",
         color: "pink-text-gradient",
       },
       {

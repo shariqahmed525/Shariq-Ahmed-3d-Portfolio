@@ -25,6 +25,8 @@ import aws from "/assets/tech/AWS.png";
 import sass from "/assets/tech/Sass.png";
 import redux from "/assets/tech/Redux.png";
 import redis from "/assets/tech/Redis.png";
+import prisma from "/assets/tech/Prisma.png";
+import supabase from "/assets/tech/Supabase.png";
 import svelte from "/assets/tech/Svelte.png";
 import nuxtJS from "/assets/tech/NuxtJS.png";
 import vueJS from "/assets/tech/Vue.js.png";
@@ -120,6 +122,8 @@ export {
   googleCloud,
   tailwindCSS,
   adonis,
+  supabase,
+  prisma,
 
   // Portfolios Icons
   bioPortfolio,
