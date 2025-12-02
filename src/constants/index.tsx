@@ -399,7 +399,7 @@ const projects: ProjectInterface[] = [
     android_link:
       "https://play.google.com/store/apps/details?id=com.lionsrking",
     ios_link: "https://apps.apple.com/us/app/lionsrking/id6448316220",
-    live_link: "https://relayautomotive.com/",
+    live_link: "",
   },
   {
     name: "Personal Portfolio",
@@ -536,8 +536,8 @@ const projects: ProjectInterface[] = [
       },
     ],
     image: diridealPortfolio,
-    android_link: "https://play.google.com/store/apps/details?id=com.dirideal",
-    live_link: "https://www.dirideal.com/",
+    android_link: "",
+    live_link: "",
   },
   {
     name: "Lineage CRM",
@@ -583,6 +583,7 @@ const projects: ProjectInterface[] = [
     ],
     image: lineagePortfolio,
     live_link: "https://www.lineagecrm.com/",
+    ios_link: "https://apps.apple.com/my/app/lineage-crm-mobile/id6504883732",
   },
   {
     name: "Moertsch",
@@ -631,7 +632,7 @@ const projects: ProjectInterface[] = [
       },
     ],
     image: moertschPortfolio,
-    ios_link: "https://apps.apple.com/us/app/moertsch/id1617860624",
+    ios_link: "",
   },
   {
     name: "Relay Automotive",
@@ -782,28 +783,7 @@ const projects: ProjectInterface[] = [
     ],
     image: plaiPortfolio,
     live_link: "https://www.plai.io/",
-    android_link: "https://play.google.com/store/apps/details?id=com.plai",
-  },
-  {
-    name: "Dirt Out Duct Cleaning",
-    description:
-      "Dirt Out Duct Cleaning offers professional services focused on improving indoor air quality. They provide air duct, dryer vent, furnace, and mold cleaning across various states in the U.S. The platform ensures better airflow, energy efficiency, and safety for homes and businesses, delivering services with fast, thorough, and eco-friendly methods.",
-    tags: [
-      {
-        name: "Next.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Sendgrid",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: dirtoutPortfolio,
-    live_link: "https://dirtoutductcleaning.co/",
+    android_link: "",
   },
   {
     name: "Steep Rock",
